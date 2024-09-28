@@ -1,33 +1,6 @@
 # 💫 About Me:
 Olá, tudo bem?<br>Me chamo David, sou formado em Analises e Desenvolvimento de Sistemas.<br><br>Atualmente, trabalho em projetos voltados ao fullstack. <br>Procuro ajuda para desenvolver melhor meus códigos, <br>sempre aprendendo mais. No momento, estou aprendendo frameworks voltados a JavaScript e Python. <br>Sou um desenvolvedor apaixonado por tecnologia e acredito que podemos mudar a vida das pessoas, <br>facilitando e automatizando processos.<br><br><br>Hello, are u okay?<br><br>My name's David, I have a degree in Systems Analysis and Development.<br><br>I'm currently working on fullstack projects. <br>I'm looking for help to improve my coding skills while continuously learning. <br>Right now, I'm learning frameworks related to JavaScript and Python. <br>I am a passionate developer who believes in the power of technology to transform lives by simplifying and automating processes.
 
-name: Generate snake game
-
-on:
-  schedule: # execute every 12 hours
-    - cron: "* */12 * * *"
-  workflow_dispatch:
-
-jobs:
-  build:
-    name: Jobs to update datas
-    runs-on: ubuntu-latest
-    steps:
-      # Snake Animation
-      - uses: Sutil/snk@master
-        id: snake-gif
-        with:
-          github_user_name: ${{ github.repository_owner }}
-          svg_out_path: dist/github-contribution-grid-snake2.svg
-          snake_color: 'blue'
-
-      - uses: crazy-max/ghaction-github-pages@v2.1.3
-        with:
-          target_branch: output
-          build_dir: dist
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
 
 
 ## 🌐 Socials:
